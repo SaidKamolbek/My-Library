@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/allLeauges">
+
+    <fragment
+        android:id="@+id/allLeauges"
+        android:name="com.example.retrofit.fragments.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/leagueDetails"
+        android:name="com.example.retrofit.fragments.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_Details" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="asdas" />
+    </fragment>
+    <fragment
+        android:id="@+id/seasons"
+        android:name="com.example.retrofit.fragments.SeasonsFragment"
+        android:label="fragment_seasons"
+        tools:layout="@layout/fragment_seasons" />
+    <fragment
+        android:id="@+id/standings"
+        android:name="com.example.retrofit.fragments.Standings"
+        android:label="fragment_standings"
+        tools:layout="@layout/fragment_standings" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.retrofit.fragments.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/statsTable"
+        android:name="com.example.retrofit.fragments.StatsTable"
+        android:label="fragment_stats_table"
+        tools:layout="@layout/fragment_stats_table" />
+</navigation>
