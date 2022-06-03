@@ -46,7 +46,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.SaidkamolBek'
+                groupId = 'com.github.SaidKamolbek'
                 artifactId = 'my-sample-library'
                 version = '1.0'
             }
