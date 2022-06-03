@@ -47,7 +47,7 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.SaidkamolBek'
-                artifactId = 'My Sample library'
+                artifactId = 'my-sample-library'
                 version = '1.0'
             }
         }
